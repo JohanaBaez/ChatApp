@@ -1,14 +1,13 @@
 import { StyleSheet, Text, View } from 'react-native';
+import User from '../screens/User';
 
 
 const ScrollView = ()=>{
 
     return(
-        <view>
-            <Text>
-                Hola mundox
-            </Text>
-        </view>
+        <View>
+           <User/>
+        </View>
     )
 }
 
