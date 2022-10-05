@@ -1,6 +1,12 @@
 import { Button, StyleSheet, Text, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import ScrollView from './ScrollView';
+
+import { SimpleLineIcons } from '@expo/vector-icons'; 
+import { Foundation } from '@expo/vector-icons'; 
+
+
+
 import { MaterialCommunityIcons } from '@expo/vector-icons'; 
 import { FontAwesome5 } from '@expo/vector-icons'; 
 import { Ionicons } from '@expo/vector-icons'; 
@@ -15,7 +21,9 @@ const Main = ()=>{
         <View style={styles.container}>
             <StatusBar style="light" />
             <View style={styles.header}>
-
+            <SimpleLineIcons name="bell" size={40} color="gray" />
+            <FontAwesome5 name="user-circle" size={40} color="gray" />
+            <Foundation name="list" size={40} color="gray" />
             </View>
 
             <View style={styles.body}>
@@ -25,9 +33,13 @@ const Main = ()=>{
             <View style={styles.foot}>
            
             <MaterialCommunityIcons name="home" size={52} color="gray"  />
+
             <MaterialIcons name="featured-play-list" size={52} color="gray" />
+
             <FontAwesome5 name="book-open" size={52} color="gray" />
+
             <Ionicons name="people" size={52} color="gray" />
+
             <Fontisto name="favorite" size={52} color="gray" />
             </View>
            
@@ -44,7 +56,12 @@ const styles = StyleSheet.create({
     },
     header:{
         backgroundColor: '#28333F', 
-        flex:1.5 
+        flex:1.5,
+        flexDirection: 'row',
+        justifyContent:'space-between',
+        alignItems:'flex-end',
+        paddingLeft:'60%'
+        
     },
     body:{
         backgroundColor: '#4D5FAC', 
