@@ -1,13 +1,17 @@
 import { StyleSheet, Text, View } from 'react-native';
+interface Props{
+    title: string;
+    date: string;
+    coment:string;
+}
 
-
-const FormUser = ()=>{
+const FormUser = ({title,date,coment}:Props)=>{
 
     return(
         <View>
-            <Text>
-                Hola mundox ELso
-            </Text>
+            <Text>{title}</Text>
+            <Text>{date}</Text>
+            <Text>{coment}</Text>
         </View>
     )
 }

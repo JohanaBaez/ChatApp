@@ -30,6 +30,9 @@ const FormMain = () => {
             </View>
 
             <View style={styles.body}>
+                <View>
+            
+                </View>
                 <FormScrollView></FormScrollView>
             </View>
 
@@ -83,4 +86,5 @@ const styles = StyleSheet.create({
 
 
     }
+
 });
