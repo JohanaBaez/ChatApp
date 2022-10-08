@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 
 
-const User = ()=>{
+const FormUser = ()=>{
 
     return(
         <View>
@@ -12,7 +12,7 @@ const User = ()=>{
     )
 }
 
-export default User;
+export default FormUser;
 
 const styles = StyleSheet.create({
 

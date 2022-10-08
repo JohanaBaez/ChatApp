@@ -2,16 +2,16 @@ import { StyleSheet, Text, View } from 'react-native';
 import User from '../screens/User';
 
 
-const ScrollView = ()=>{
+const FormButtons = ()=>{
 
     return(
         <View>
-           <User/>
+        
         </View>
     )
 }
 
-export default ScrollView;
+export default FormButtons;
 
 const styles = StyleSheet.create({
 
